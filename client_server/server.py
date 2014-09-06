@@ -8,9 +8,12 @@ addr = ("localhost", 12345)
 
 TCP_FASTOPEN = 23
 
+TFO = True
+
 s = socket.socket()
 s.bind(addr)
-s.setsockopt(socket.SOL_TCP, TCP_FASTOPEN, 100)
+if TFO:
+	s.setsockopt(socket.SOL_TCP, TCP_FASTOPEN, 100)
 s.listen(1)
 
 while True:
