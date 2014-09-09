@@ -3,7 +3,8 @@ import logging
 
 logging.basicConfig(format="%(asctime)s: %(message)s", level=logging.INFO)
 
-addr = ("localhost", 12345)
+#addr = ("localhost", 12345)
+addr = ("pi", 12345)
 msg = "Hi!"
 #addr = ("www.google.com", 80)
 #msg = "GET /\n"
