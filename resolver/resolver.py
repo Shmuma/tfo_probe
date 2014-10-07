@@ -4,6 +4,7 @@ import argparse
 import socket
 import Queue as queue
 
+from lib import data
 
 if __name__ == "__main__":
 	logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s: %(message)s")
